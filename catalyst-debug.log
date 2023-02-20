@@ -1,0 +1,337 @@
+[debug] [2023-02-18T21:31:19.276Z] : 
+[debug] [2023-02-18T21:31:19.277Z] : ----------------------------------------------------------------------
+[debug] [2023-02-18T21:31:19.278Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\USER\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2023-02-18T21:31:19.278Z] : CLI Version:  1.13.3
+[debug] [2023-02-18T21:31:19.279Z] : Platform:     win32
+[debug] [2023-02-18T21:31:19.279Z] : Node Version: v18.12.1
+[debug] [2023-02-18T21:31:19.280Z] : Time:         Sun Feb 19 2023 05:31:19 GMT+0800 (Singapore Standard Time)
+[debug] [2023-02-18T21:31:19.280Z] : ----------------------------------------------------------------------
+[debug] [2023-02-18T21:31:19.280Z] : 
+[debug] [2023-02-18T21:31:19.898Z] : > authorizing via signed-in user option
+[debug] [2023-02-18T21:31:19.899Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL"]
+[debug] [2023-02-18T21:31:19.911Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/12143000000093231 
+
+[debug] [2023-02-18T21:31:20.534Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 18 Feb 2023 21:31:21 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=04d9a2d1e2e86744f9516a3e9f805f56; Path=/","ZD_CSRF_TOKEN=871e8c58-c372-457b-9832-51c655ef104d;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=871e8c58-c372-457b-9832-51c655ef104d;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-02-18T21:31:20.546Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/12143000000093231/environment 
+
+[debug] [2023-02-18T21:31:21.097Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 18 Feb 2023 21:31:21 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/","ZD_CSRF_TOKEN=5e72364f-8aee-4827-95f5-76d397d795eb;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=5e72364f-8aee-4827-95f5-76d397d795eb;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-02-18T21:31:21.283Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/12143000000093231/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2023-02-18T21:31:21.838Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 18 Feb 2023 21:31:22 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=ba2a1b22f2a5e14b0d2647f7e38884fc; Path=/","ZD_CSRF_TOKEN=72858c02-99f7-45ec-8fb4-e3334e5e0cfd;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=72858c02-99f7-45ec-8fb4-e3334e5e0cfd;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-02-18T21:31:21.846Z] : unknown eol undefined hence skipping check
+[info] [2023-02-18T21:31:21.919Z] : i server[tabs_function]: URL : http://localhost:3000/server/tabs_function/
+[info] [2023-02-18T21:31:21.919Z] : 
+[info] [2023-02-18T21:31:24.227Z] : [react-plugin]: Starting the development server...
+
+[info] [2023-02-18T21:31:24.229Z] : i client[react-app]: Plugin : "zcatalyst-cli-plugin-react" is used for client serve
+[info] [2023-02-18T21:31:29.944Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T21:31:29.945Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 1:17:  'useState' is defined but never used            no-unused-vars
+  Line 1:27:  'useEffect' is defined but never used           no-unused-vars
+  Line 2:10:  'FaAngleDoubleRight' is defined but never used  no-unused-vars
+  Line 5:7:   'url' is assigned a value but never used        no-unused-vars
+[info] [2023-02-18T21:31:29.945Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T21:31:29.945Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T21:33:57.867Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T21:33:58.171Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T21:33:58.171Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 1:27:  'useEffect' is defined but never used            no-unused-vars
+  Line 2:10:  'FaAngleDoubleRight' is defined but never used   no-unused-vars
+  Line 5:7:   'url' is assigned a value but never used         no-unused-vars
+  Line 7:10:  'loading' is assigned a value but never used     no-unused-vars
+  Line 7:19:  'setLoading' is assigned a value but never used  no-unused-vars
+  Line 8:10:  'jobs' is assigned a value but never used        no-unused-vars
+  Line 8:16:  'setJobs' is assigned a value but never used     no-unused-vars
+[info] [2023-02-18T21:33:58.171Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T21:33:58.172Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[debug] [2023-02-18T21:33:58.212Z] : > refreshing access token <
+[debug] [2023-02-18T21:33:58.216Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.com/oauth/v2/token 
+<request body omitted>
+
+[debug] [2023-02-18T21:33:58.818Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 18 Feb 2023 21:33:59 GMT","content-type":"application/json;charset=UTF-8","content-length":"2728","connection":"close","set-cookie":["b266a5bf57=57c7a14afabcac9a0b9dfc64b3542b70; Path=/","iamcsr=e5d7207c-1636-4797-a65b-4aa5fbcfa0fb;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=e5d7207c-1636-4797-a65b-4aa5fbcfa0fb;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-xss-protection":"1","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[info] [2023-02-18T21:35:18.503Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T21:35:18.755Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T21:35:18.755Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 1:27:   'useEffect' is defined but never used            no-unused-vars
+  Line 2:10:   'FaAngleDoubleRight' is defined but never used   no-unused-vars
+  Line 7:10:   'loading' is assigned a value but never used     no-unused-vars
+  Line 7:19:   'setLoading' is assigned a value but never used  no-unused-vars
+  Line 8:10:   'jobs' is assigned a value but never used        no-unused-vars
+  Line 8:16:   'setJobs' is assigned a value but never used     no-unused-vars
+  Line 9:10:   'value' is assigned a value but never used       no-unused-vars
+  Line 9:17:   'setValue' is assigned a value but never used    no-unused-vars
+  Line 11:9:   'fetchJobs' is assigned a value but never used   no-unused-vars
+  Line 13:11:  'newJobs' is assigned a value but never used     no-unused-vars
+[info] [2023-02-18T21:35:18.756Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T21:35:18.757Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T21:35:46.291Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T21:35:46.476Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T21:35:46.476Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 1:27:  'useEffect' is defined but never used           no-unused-vars
+  Line 2:10:  'FaAngleDoubleRight' is defined but never used  no-unused-vars
+  Line 7:10:  'loading' is assigned a value but never used    no-unused-vars
+  Line 8:10:  'jobs' is assigned a value but never used       no-unused-vars
+  Line 9:10:  'value' is assigned a value but never used      no-unused-vars
+  Line 9:17:  'setValue' is assigned a value but never used   no-unused-vars
+  Line 11:9:  'fetchJobs' is assigned a value but never used  no-unused-vars
+[info] [2023-02-18T21:35:46.477Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T21:35:46.477Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T21:36:15.219Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T21:36:15.425Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T21:36:15.425Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 2:10:  'FaAngleDoubleRight' is defined but never used  no-unused-vars
+  Line 7:10:  'loading' is assigned a value but never used    no-unused-vars
+  Line 8:10:  'jobs' is assigned a value but never used       no-unused-vars
+  Line 9:10:  'value' is assigned a value but never used      no-unused-vars
+  Line 9:17:  'setValue' is assigned a value but never used   no-unused-vars
+[info] [2023-02-18T21:36:15.425Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T21:36:15.425Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T21:37:03.551Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T21:37:03.742Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T21:37:03.743Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 2:10:  'FaAngleDoubleRight' is defined but never used  no-unused-vars
+  Line 8:10:  'jobs' is assigned a value but never used       no-unused-vars
+  Line 9:10:  'value' is assigned a value but never used      no-unused-vars
+  Line 9:17:  'setValue' is assigned a value but never used   no-unused-vars
+[info] [2023-02-18T21:37:03.743Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T21:37:03.743Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T21:40:12.677Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T21:40:12.915Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T21:40:12.915Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 2:10:   'FaAngleDoubleRight' is defined but never used  no-unused-vars
+  Line 9:17:   'setValue' is assigned a value but never used   no-unused-vars
+  Line 28:11:  'company' is assigned a value but never used    no-unused-vars
+  Line 28:20:  'dates' is assigned a value but never used      no-unused-vars
+  Line 28:27:  'duties' is assigned a value but never used     no-unused-vars
+  Line 28:35:  'title' is assigned a value but never used      no-unused-vars
+[info] [2023-02-18T21:40:12.915Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T21:40:12.915Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T21:40:44.138Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T21:40:44.321Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T21:40:44.322Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 2:10:   'FaAngleDoubleRight' is defined but never used  no-unused-vars
+  Line 9:17:   'setValue' is assigned a value but never used   no-unused-vars
+  Line 28:11:  'company' is assigned a value but never used    no-unused-vars
+  Line 28:20:  'dates' is assigned a value but never used      no-unused-vars
+  Line 28:27:  'duties' is assigned a value but never used     no-unused-vars
+  Line 28:35:  'title' is assigned a value but never used      no-unused-vars
+[info] [2023-02-18T21:40:44.322Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T21:40:44.322Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T21:41:12.600Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T21:41:12.790Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T21:41:12.790Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 2:10:   'FaAngleDoubleRight' is defined but never used  no-unused-vars
+  Line 9:17:   'setValue' is assigned a value but never used   no-unused-vars
+  Line 28:11:  'company' is assigned a value but never used    no-unused-vars
+  Line 28:20:  'dates' is assigned a value but never used      no-unused-vars
+  Line 28:27:  'duties' is assigned a value but never used     no-unused-vars
+  Line 28:35:  'title' is assigned a value but never used      no-unused-vars
+[info] [2023-02-18T21:41:12.790Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T21:41:12.790Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T21:41:57.100Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T21:41:57.325Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T21:41:57.325Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 2:10:   'FaAngleDoubleRight' is defined but never used  no-unused-vars
+  Line 9:17:   'setValue' is assigned a value but never used   no-unused-vars
+  Line 28:11:  'company' is assigned a value but never used    no-unused-vars
+  Line 28:20:  'dates' is assigned a value but never used      no-unused-vars
+  Line 28:27:  'duties' is assigned a value but never used     no-unused-vars
+[info] [2023-02-18T21:41:57.325Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T21:41:57.326Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T21:42:11.735Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T21:42:11.910Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T21:42:11.910Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 2:10:   'FaAngleDoubleRight' is defined but never used  no-unused-vars
+  Line 9:17:   'setValue' is assigned a value but never used   no-unused-vars
+  Line 28:20:  'dates' is assigned a value but never used      no-unused-vars
+  Line 28:27:  'duties' is assigned a value but never used     no-unused-vars
+[info] [2023-02-18T21:42:11.910Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T21:42:11.910Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T21:44:22.809Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T21:44:23.264Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T21:44:23.264Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 9:17:  'setValue' is assigned a value but never used  no-unused-vars
+[info] [2023-02-18T21:44:23.264Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T21:44:23.264Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T21:47:55.444Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T21:47:55.790Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T21:47:55.791Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 9:17:  'setValue' is assigned a value but never used  no-unused-vars
+[info] [2023-02-18T21:47:55.791Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T21:47:55.791Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T21:48:24.911Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T21:48:25.128Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T21:48:25.128Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 9:17:  'setValue' is assigned a value but never used  no-unused-vars
+[info] [2023-02-18T21:48:25.129Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T21:48:25.129Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T21:49:58.281Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T21:49:58.564Z] : [react-plugin]: Compiled successfully!
+[info] [2023-02-18T21:49:58.565Z] : [react-plugin]: 
+[info] [2023-02-18T21:49:58.565Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2023-02-18T21:49:58.565Z] : [react-plugin]: 
+[info] [2023-02-18T21:49:58.565Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2023-02-18T21:49:58.566Z] : [react-plugin]:   On Your Network:  http://192.168.254.105:3000/app/
+[info] [2023-02-18T21:49:58.566Z] : [react-plugin]: 
+[info] [2023-02-18T21:49:58.566Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2023-02-18T21:49:58.566Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2023-02-18T21:49:58.567Z] : [react-plugin]: 
+[info] [2023-02-18T21:51:44.235Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T21:51:44.556Z] : [react-plugin]: Compiled successfully!
+[info] [2023-02-18T21:51:44.556Z] : [react-plugin]: 
+[info] [2023-02-18T21:51:44.556Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2023-02-18T21:51:44.556Z] : [react-plugin]: 
+[info] [2023-02-18T21:51:44.557Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2023-02-18T21:51:44.557Z] : [react-plugin]:   On Your Network:  http://192.168.254.105:3000/app/
+[info] [2023-02-18T21:51:44.557Z] : [react-plugin]: 
+[info] [2023-02-18T21:51:44.557Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2023-02-18T21:51:44.557Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2023-02-18T21:51:44.557Z] : [react-plugin]: 
+[info] [2023-02-18T21:53:02.036Z] : Shutting down server
+[info] [2023-02-18T21:53:02.041Z] : 
+[info] [2023-02-18T21:53:02.042Z] : √ Shutdown complete
+[debug] [2023-02-18T21:53:02.042Z] : NO ERRORS REGISTERED
+[debug] [2023-02-18T21:53:02.043Z] : EXEC ENDED with event: serve, message: success
+[debug] [2023-02-18T21:53:02.043Z] : TOTAL DURATION OF COMMAND EXEC : 1302158
+[debug] [2023-02-18T21:53:02.055Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2023-02-18T21:53:03.913Z] : <<<< HTTP RESPONSE : 400
+Response Headers: {"server":"ZGS","date":"Sat, 18 Feb 2023 21:53:04 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"147","connection":"close","set-cookie":["46512fd555=04d9a2d1e2e86744f9516a3e9f805f56; Path=/","ZD_CSRF_TOKEN=d5abeeb4-0154-41ab-adcd-445a61981aed;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=d5abeeb4-0154-41ab-adcd-445a61981aed;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=8E0F122116E547C1D5D81A42A77480DE; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"DENY"}
+
+[debug] [2023-02-18T21:53:03.915Z] : Response Body : {"status":"failure","data":{"error_code":"INPUT_SIZE_MORE_THAN_ALLOWED","message":"Please check if the size of the input is in the correct range"}}
+
+[debug] [2023-02-18T21:53:03.918Z] : Unable to send debug log to server: HTTP Error: 400, Please check if the size of the input is in the correct range
+[debug] [2023-02-18T21:53:09.815Z] : 
+[debug] [2023-02-18T21:53:09.816Z] : ----------------------------------------------------------------------
+[debug] [2023-02-18T21:53:09.816Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\USER\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js deploy
+[debug] [2023-02-18T21:53:09.817Z] : CLI Version:  1.13.3
+[debug] [2023-02-18T21:53:09.817Z] : Platform:     win32
+[debug] [2023-02-18T21:53:09.817Z] : Node Version: v18.12.1
+[debug] [2023-02-18T21:53:09.818Z] : Time:         Sun Feb 19 2023 05:53:09 GMT+0800 (Singapore Standard Time)
+[debug] [2023-02-18T21:53:09.819Z] : ----------------------------------------------------------------------
+[debug] [2023-02-18T21:53:09.819Z] : 
+[debug] [2023-02-18T21:53:10.432Z] : > authorizing via signed-in user option
+[debug] [2023-02-18T21:53:10.432Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.webapp.ALL"]
+[debug] [2023-02-18T21:53:10.444Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/12143000000093231 
+
+[debug] [2023-02-18T21:53:11.086Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 18 Feb 2023 21:53:11 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/","ZD_CSRF_TOKEN=02934c14-3799-49e3-8b80-e811ff944b16;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=02934c14-3799-49e3-8b80-e811ff944b16;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-02-18T21:53:11.097Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/12143000000093231/environment 
+
+[debug] [2023-02-18T21:53:11.647Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 18 Feb 2023 21:53:12 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/","ZD_CSRF_TOKEN=8b5c9cbe-5935-4465-810c-fce53a959c7d;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=8b5c9cbe-5935-4465-810c-fce53a959c7d;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-02-18T21:53:11.679Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/12143000000093231/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2023-02-18T21:53:12.251Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 18 Feb 2023 21:53:12 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=63dd9cf89a6678b816d9580ec827ee61; Path=/","ZD_CSRF_TOKEN=3919d939-ef77-4287-9349-1b5c8c10866e;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=3919d939-ef77-4287-9349-1b5c8c10866e;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-02-18T21:53:12.255Z] : unknown eol undefined hence skipping check
+[debug] [2023-02-18T21:53:12.421Z] : >>>> HTTP REQUEST : PUT https://api.catalyst.zoho.com/baas/v1/project/12143000000093231/server/upsert 
+
+[debug] [2023-02-18T21:53:15.702Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 18 Feb 2023 21:53:16 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=ba2a1b22f2a5e14b0d2647f7e38884fc; Path=/","ZD_CSRF_TOKEN=f5e5e0af-7a9d-4221-b23c-44427d5f8041;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=f5e5e0af-7a9d-4221-b23c-44427d5f8041;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[info] [2023-02-18T21:53:15.837Z] : i Plugin : "zcatalyst-cli-plugin-react" is used for client deploy
+[info] [2023-02-18T21:53:15.838Z] : i Building Application...
+[info] [2023-02-18T21:53:17.583Z] : [react-plugin]: Creating an optimized production build...
+[info] [2023-02-18T21:53:24.898Z] : [react-plugin]: Compiled successfully.
+
+[info] [2023-02-18T21:53:24.898Z] : [react-plugin]: File sizes after gzip:
+
+[info] [2023-02-18T21:53:24.909Z] : [react-plugin]:   49.29 kB  build\static\js\main.6a901095.js
+[info] [2023-02-18T21:53:24.909Z] : [react-plugin]:   1.38 kB   build\static\css\main.cf38550b.css
+[info] [2023-02-18T21:53:24.910Z] : [react-plugin]:  
+[debug] [2023-02-18T21:53:25.259Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/project/12143000000093231/webapp 
+
+[debug] [2023-02-18T21:53:27.993Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 18 Feb 2023 21:53:28 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/","ZD_CSRF_TOKEN=9b360629-1cd9-4bea-b7f6-bd11a9fe7a03;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=9b360629-1cd9-4bea-b7f6-bd11a9fe7a03;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[info] [2023-02-18T21:53:27.994Z] : 
+[info] [2023-02-18T21:53:27.995Z] : i functions(tabs_function): URL => https://tabs-771945458.development.catalystserverless.com/server/tabs_function/
+[info] [2023-02-18T21:53:27.995Z] : √ functions(tabs_function): deploy successful
+[info] [2023-02-18T21:53:27.995Z] : 
+[info] [2023-02-18T21:53:27.996Z] : √ client: deploy successful
+[info] [2023-02-18T21:53:27.996Z] : i client: URL => https://tabs-771945458.development.catalystserverless.com/app/index.html
+[info] [2023-02-18T21:53:27.996Z] : 
+[info] [2023-02-18T21:53:27.997Z] : √ Catalyst deploy complete!
+[debug] [2023-02-18T21:53:27.997Z] : NO ERRORS REGISTERED
+[debug] [2023-02-18T21:53:27.997Z] : EXEC ENDED with event: deploy, message: success
+[debug] [2023-02-18T21:53:27.997Z] : TOTAL DURATION OF COMMAND EXEC : 17578
+[debug] [2023-02-18T21:53:28.009Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2023-02-18T21:53:29.857Z] : <<<< HTTP RESPONSE : 400
+Response Headers: {"server":"ZGS","date":"Sat, 18 Feb 2023 21:53:30 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"147","connection":"close","set-cookie":["46512fd555=ba2a1b22f2a5e14b0d2647f7e38884fc; Path=/","ZD_CSRF_TOKEN=11640ef7-0cf1-42a6-b436-bdb16d619f56;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=11640ef7-0cf1-42a6-b436-bdb16d619f56;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=6601E7FDD95012274FB5EAB8FCC7B546; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"DENY"}
+
+[debug] [2023-02-18T21:53:29.858Z] : Response Body : {"status":"failure","data":{"error_code":"INPUT_SIZE_MORE_THAN_ALLOWED","message":"Please check if the size of the input is in the correct range"}}
+
+[debug] [2023-02-18T21:53:29.859Z] : Unable to send debug log to server: HTTP Error: 400, Please check if the size of the input is in the correct range
